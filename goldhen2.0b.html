@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html manifest="Cache.manifest">
+<head>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<title>CRONO_ DREAMBOX PS4 9.XX V2.0</title>
+<link rel="stylesheet" href="css/main.css">
+<style > 
+html, body{
+    background: url('img/bg1.png');
+    background-attachment: fixed;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-color: #000;
+}
+
+.info {
+    overflow: hidden;
+    position: fixed;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-size: 45px;
+    font-family: sans-serif;
+    color: #f00;
+    transform: translate(-50%, -50%);
+}
+
+</style>
+
+<script>
+
+function awaitpl() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("awaiting").style.display = "block";
+}
+function ghdone() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("done").style.display = "block";
+}
+ function allset() {
+        document.location.href = 'index.html';
+}
+</script>
+<script src="int64.js"></script>
+<script src="rop.js"></script>
+<script src="kexploit.js"></script>
+<script src="webkit.js"></script>
+</head>
+
+<a href="https://twitter.com/cronocardoso"><img class="icon" src="img/icon.gif"/></a>
+<h1 class="msgs" id="msgs">CRONO_ DREAMBOX PS4 9.XX V1.0</h1>
+<hr>
+
+<body onload="setTimeout(poc, 1500);">
+<script>
+if(document.cookie.indexOf('kex=0') >= 0)
+    document.location.href = 'index.html';
+</script>
+<div id="loader" class="info">Executando Exploit, Agarde!!</div>
+<div id="awaiting" class="info" style="display:none;">Por favor Envie o Arqivo Payload (exfathax.img) para a porta 9020!</div>
+<div id="done" class="info" style="display:none;">Tudo Pronto, Agora Remova o drive USB e Bons Jogos!</div>
+</body>
+<script>
+</script>
+</html>

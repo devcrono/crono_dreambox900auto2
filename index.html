@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<title>CRONO_ DREAMBOX PS4 9.xx V2.0</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/simple-notify.min.css" />
+<style> 
+    html, body{
+      background: url('img/bg1.png');
+      background-attachment: fixed;
+      margin:auto;
+      font-size:20px;
+      font-weight:lighter;
+      color:#FFFFFF;
+      background-color: #000;
+      background-attachment: fixed;
+      background-size:100% 100%;
+      background-repeat:no-repeat;
+}
+</style>
+  <script type="text/javascript" src="main.js"></script>
+  <script src="simple-notify.min.js"></script>
+  <script src="jquery-3.6.0.js"></script>
+
+		<script>
+			function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.getElementById="display:none";window.progress.innerHTML="Instalando Cache Offline: " + Percent + "%";}
+    function DisplayCacheProgress(){setTimeout(function(){window.progress.innerHTML="Cache Instalado com Successo ✔";},1000);setTimeout(function(){window.progress.innerHTML="Agora Feche e Re-Abra o Navegador...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+document.cookie = 'kex=1';
+		</script>
+
+</head>
+<body onload="go()">
+<h1 class="progress" id="progress">CRONO_ DREAMBOX PS4 9.00 V2.0</h1>
+<hr>
+
+<div style="text-align:center">
+  <a href="goldhen2.0b.html" >
+    <button class="btn btn-main" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='GOLD - HEN V2.0B Para todos os FW 9.XX'";   type="button"><img class="icone" src="img/HenEnable.png" /><br> GOLD HEN V2.0B </button></a></div>
+
+<div class="SelectF">
+  <input type="text" placeholder="PS4 IP Here" id="psip"></div>
+<div style="text-align:center"  id="MyItems"><br>
+
+<a href="https://twitter.com/cronocardoso"><img class="icon" src="img/icon.gif"/></a> 
+<br>
+<hr style="width: 50%"><h1 style="color:#00FF12;" >PAYLOADS DISPONIVEIS</h1><hr style="width: 50%">
+<br>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Dump seus jogos (necessário ter um drive USB em exFAT)'"; onclick="load_AppDumper()"><button href="" class="btn" ><img class="icone" src="img/dumper.png" /><br> Game Dumper </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Acesse seu console através do FTP'"; onclick="load_FTP()">
+  <button class="btn" href=""> <img class="icone" src="img/ftp.png" /><br> FTP </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Move os Jogos Instalados no HD interno para o Externo em EXFAT'"; onclick="load_App2USB()"><button class="btn" href="" ><img class="icone" src="img/app2usb.png" /><br> App-To-Usb </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Habilita algumas funções Especiais na Aba dos Jogos'";  onclick="load_TODEX()"><button class="btn" href=""><img class="icone" src="img/todex.png" /><br> To -  Dex </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Desabilita as atualizações do Sistema'"; onclick="load_DisableUpdates()"><button class="btn" href="" ><img class="icone" src="img/disableupdate.png" /><br> Desabilitar Upadates </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Habilita as atualizações do sistema'"; onclick="load_EnableUpdates()"><button href="" class="btn" ><img class="icone" src="img/enableupdate.png" /><br> Habilitar Upadates </button></a>
+
+<br><br>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Cria um backup do BD do console em uma unidade USB'"; onclick="load_BackupDB()"><button href="" class="btn" ><img class="icone" src="img/backup.png" /><br> Backup DB </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Restaurar backup de banco de dados de unidade USB'"; onclick="load_RestoreDB()"><button href="" class="btn" ><img class="icone" src="img/restore.png" /><br> Restaurar DB </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Habilite o histórico do navegador'"; onclick="load_EnableBrowser()"><button class="btn" href="" ><img class="icone" src="img/enableupdate.png" /><br> Habilitar Browser </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Desative o histórico do navegador'"; onclick="load_HistoryBlocker()"><button class="btn" href=""><img class="icone" src="img/disableupdate.png" /><br> Bloquear Historico </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Sai do Modo IDU (Opção pra Desenvolvedores...) '"; onclick="load_ExitIDU()"><button class="btn" href="" ><img class="icone" src="img/history.png" /><br> Exit IDU </button></a>
+
+<br><br>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Desativa o ASLR (randomização do layout do espaço de endereço)'"; onclick="load_DisableASLR()"><button class="btn" href="" ><img class="icone" src="img/disableupdate.png" /><br> Desabilitar ASLR </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Dump do kernel do console para uma unidade USB'"; onclick="load_KernelDumper()"><button href="" class="btn" > <img class="icone" src="img/history.png" /><br> Kernel Dumper </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Alterar a hora do relógio do kernel do console'"; onclick="load_Kernelclock()"><button href="" class="btn" ><img class="icone" src="img/history.png" /><br> Kernel Clock </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Renomeia RIFs 'falsos' para RIFs 'oficiais''"; onclick="load_RIFRenamer()"><button href="" class="btn" ><img class="icone" src="img/keydumper.png" /><br> RIF Renaner </button></a>
+
+
+
+<br><br>
+<script>
+
+
+
+function load_App2USB(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "app2usb.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+function load_BackupDB(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "backupdb.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+function load_AppDumper(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "appdumper.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+function load_KernelDumper(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "kerneldumper.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+function load_Kernelclock(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "kernelclock.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+function load_RestoreDB(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "restoredb.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+function load_DisableASLR(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "disableaslr.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+function load_DisableUpdates(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "disableupdates.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+function load_EnableUpdates(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "enbaleupdates.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+function load_EnableBrowser(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "enbalebrowser.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+function load_ExitIDU(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "exitidu.bin";
+    LoadviaGoldhen(PLfile);
+}
+  
+function load_FTP(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "ftp.bin";
+    LoadviaGoldhen(PLfile);
+}
+  
+function load_HistoryBlocker(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "historyblocker.bin";
+    LoadviaGoldhen(PLfile);
+}
+  
+function load_RIFRenamer(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "rifrenamer.bin";
+    LoadviaGoldhen(PLfile);
+}
+  
+
+function load_ToDex(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "ToDex.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+
+</script>	 
+</div>
+</body>
+
+</html>
