@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <link rel="shortcut icon" href="img/favicon.ico" />
-<title>CRONO_ DREAMBOX PS4 9.xx V2.0</title>
+<title>CRONO_ DREAMBOX PS4 9.xx V2.5</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/font.css">
@@ -34,12 +34,12 @@ document.cookie = 'kex=1';
 
 </head>
 <body onload="go()">
-<h1 class="progress" id="progress">CRONO_ DREAMBOX PS4 9.00 V2.0</h1>
+<h1 class="progress" id="progress">CRONO_ DREAMBOX PS4 9.00 V2.5</h1>
 <hr>
 
 <div style="text-align:center">
   <a href="goldhen2.0b.html" >
-    <button class="btn btn-main" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='GOLD - HEN V2.0B Para todos os FW 9.XX'";   type="button"><img class="icone" src="img/HenEnable.png" /><br> GOLD HEN V2.0B </button></a></div>
+    <button class="btn btn-main" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='GOLD - HEN V2.0B Para todos os FW 9.XX'";   type="button"><img class="icone" src="img/HenEnable.png" /><br> GOLD HEN V2.0B </button></a></div>
 
 <div class="SelectF">
   <input type="text" placeholder="PS4 IP Here" id="psip"></div>
@@ -50,40 +50,44 @@ document.cookie = 'kex=1';
 <hr style="width: 50%"><h1 style="color:#00FF12;" >PAYLOADS DISPONIVEIS</h1><hr style="width: 50%">
 <br>
 
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Dump seus jogos (necessário ter um drive USB em exFAT)'"; onclick="load_AppDumper()"><button href="" class="btn" ><img class="icone" src="img/dumper.png" /><br> Game Dumper </button></a>
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Dump seus jogos (necessário ter um drive USB em exFAT)'"; onclick="load_AppDumper()"><button href="" class="btn" ><img class="icone" src="img/dumper.png" /><br> Game Dumper </button></a>
 
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Acesse seu console através do FTP'"; onclick="load_FTP()">
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Acesse seu console através do FTP'"; onclick="load_FTP()">
   <button class="btn" href=""> <img class="icone" src="img/ftp.png" /><br> FTP </button></a>
 
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Move os Jogos Instalados no HD interno para o Externo em EXFAT'"; onclick="load_App2USB()"><button class="btn" href="" ><img class="icone" src="img/app2usb.png" /><br> App-To-Usb </button></a>
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Move os Jogos Instalados no HD interno para o Externo em EXFAT'"; onclick="load_App2USB()"><button class="btn" href="" ><img class="icone" src="img/app2usb.png" /><br> App-To-Usb </button></a>
 
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Habilita algumas funções Especiais na Aba dos Jogos'";  onclick="load_TODEX()"><button class="btn" href=""><img class="icone" src="img/todex.png" /><br> To -  Dex </button></a>
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Habilita algumas funções Especiais na Aba dos Jogos'";  onclick="load_TODEX()"><button class="btn" href=""><img class="icone" src="img/todex.png" /><br> To -  Dex </button></a>
 
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Desabilita as atualizações do Sistema'"; onclick="load_DisableUpdates()"><button class="btn" href="" ><img class="icone" src="img/disableupdate.png" /><br> Desabilitar Upadates </button></a>
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Desabilita as atualizações do Sistema'"; onclick="load_DisableUpdates()"><button class="btn" href="" ><img class="icone" src="img/disableupdate.png" /><br> Desabilitar Upadates </button></a>
 
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Habilita as atualizações do sistema'"; onclick="load_EnableUpdates()"><button href="" class="btn" ><img class="icone" src="img/enableupdate.png" /><br> Habilitar Upadates </button></a>
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Habilita as atualizações do sistema'"; onclick="load_EnableUpdates()"><button href="" class="btn" ><img class="icone" src="img/enableupdate.png" /><br> Habilitar Upadates </button></a>
 
-<br><br>
-
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Cria um backup do BD do console em uma unidade USB'"; onclick="load_BackupDB()"><button href="" class="btn" ><img class="icone" src="img/backup.png" /><br> Backup DB </button></a>
-
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Restaurar backup de banco de dados de unidade USB'"; onclick="load_RestoreDB()"><button href="" class="btn" ><img class="icone" src="img/restore.png" /><br> Restaurar DB </button></a>
-
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Habilite o histórico do navegador'"; onclick="load_EnableBrowser()"><button class="btn" href="" ><img class="icone" src="img/enableupdate.png" /><br> Habilitar Browser </button></a>
-
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Desative o histórico do navegador'"; onclick="load_HistoryBlocker()"><button class="btn" href=""><img class="icone" src="img/disableupdate.png" /><br> Bloquear Historico </button></a>
-
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Sai do Modo IDU (Opção pra Desenvolvedores...) '"; onclick="load_ExitIDU()"><button class="btn" href="" ><img class="icone" src="img/history.png" /><br> Exit IDU </button></a>
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Habilita algumas funções Especiais como envio de Cheaters'"; onclick="load_webrte()"><button href="" class="btn" ><img class="icone" src="img/rte.png" /><br> WebRTE </button></a>
 
 <br><br>
 
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Desativa o ASLR (randomização do layout do espaço de endereço)'"; onclick="load_DisableASLR()"><button class="btn" href="" ><img class="icone" src="img/disableupdate.png" /><br> Desabilitar ASLR </button></a>
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Cria um backup do BD do console em uma unidade USB'"; onclick="load_BackupDB()"><button href="" class="btn" ><img class="icone" src="img/backup.png" /><br> Backup DB </button></a>
 
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Dump do kernel do console para uma unidade USB'"; onclick="load_KernelDumper()"><button href="" class="btn" > <img class="icone" src="img/history.png" /><br> Kernel Dumper </button></a>
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Restaurar backup de banco de dados de unidade USB'"; onclick="load_RestoreDB()"><button href="" class="btn" ><img class="icone" src="img/restore.png" /><br> Restaurar DB </button></a>
 
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Alterar a hora do relógio do kernel do console'"; onclick="load_Kernelclock()"><button href="" class="btn" ><img class="icone" src="img/history.png" /><br> Kernel Clock </button></a>
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Habilite o histórico do navegador'"; onclick="load_EnableBrowser()"><button class="btn" href="" ><img class="icone" src="img/enableupdate.png" /><br> Habilitar Browser </button></a>
 
-<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.0'" onMouseOver="progress.innerHTML='Renomeia RIFs 'falsos' para RIFs 'oficiais''"; onclick="load_RIFRenamer()"><button href="" class="btn" ><img class="icone" src="img/keydumper.png" /><br> RIF Renaner </button></a>
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Desative o histórico do navegador'"; onclick="load_HistoryBlocker()"><button class="btn" href=""><img class="icone" src="img/disableupdate.png" /><br> Bloquear Historico </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Habilita algumas funções Especiais Na aba de Opções dos Jogos'"; onclick="load_ps4debug()"><button class="btn" href="" ><img class="icone" src="img/ps4debug.png" /><br> PS4 Debug </button></a>
+
+<br><br>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Sai do Modo IDU (Opção pra Desenvolvedores...) '"; onclick="load_ExitIDU()"><button class="btn" href="" ><img class="icone" src="img/history.png" /><br> Exit IDU </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Desativa o ASLR (randomização do layout do espaço de endereço)'"; onclick="load_DisableASLR()"><button class="btn" href="" ><img class="icone" src="img/disableupdate.png" /><br> Desabilitar ASLR </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Dump do kernel do console para uma unidade USB'"; onclick="load_KernelDumper()"><button href="" class="btn" > <img class="icone" src="img/history.png" /><br> Kernel Dumper </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Alterar a hora do relógio do kernel do console'"; onclick="load_Kernelclock()"><button href="" class="btn" ><img class="icone" src="img/history.png" /><br> Kernel Clock </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='CRONO_ DREAMBOX PS4 9.00 V2.5'" onMouseOver="progress.innerHTML='Renomeia RIFs 'falsos' para RIFs 'oficiais''"; onclick="load_RIFRenamer()"><button href="" class="btn" ><img class="icone" src="img/keydumper.png" /><br> RIF Renaner </button></a>
 
 
 
@@ -182,7 +186,16 @@ function load_ToDex(){
     PLfile = "todex.bin";
     LoadviaGoldhen(PLfile);
 }
-
+function load_webrte(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "webrte.bin";
+    LoadviaGoldhen(PLfile);
+}
+function load_ps4debug(){
+    progress.innerHTML="Carregando Payload Aguarde....";
+    PLfile = "ps4debug.bin";
+    LoadviaGoldhen(PLfile);
+}
 
 </script>	 
 </div>
